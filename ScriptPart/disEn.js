@@ -1,5 +1,6 @@
 const bubbleSortButton = document.getElementsByClassName("bubbleSort")[0];
 const selectionSortButton = document.getElementsByClassName("selectionSort")[0];
+const heapSortButton = document.getElementsByClassName("heapSort")[0];
 const mergeSortButton = document.getElementsByClassName("mergeSort")[0];
 const insertionSortButton = document.getElementsByClassName("insertionSort")[0];
 const quickSortButton = document.getElementsByClassName("quickSort")[0];
@@ -13,6 +14,7 @@ function disableSortingButton() {
   mergeSortButton.disabled = true;
   insertionSortButton.disabled = true;
   quickSortButton.disabled = true;
+  heapSortButton.disabled = true;
 }
 function enableSortingButton() {
   bubbleSortButton.disabled = false;
@@ -20,6 +22,7 @@ function enableSortingButton() {
   mergeSortButton.disabled = false;
   insertionSortButton.disabled = false;
   quickSortButton.disabled = false;
+  heapSortButton.disabled = false;
 }
 function disableSlider() {
   speedSlider.disabled = true;

@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 480px)' href="styleMobile.css"/> -->
     <link rel="shortcut icon" href="/others/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
@@ -89,6 +90,15 @@
               Merge Sort
             </button>
           </li>
+          <li>
+            <button
+              type="button"
+              class="btn btn-outline-primary heapSort"
+              style="width: 160px; margin-bottom: 2px"
+            >
+              Heap Sort
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -99,12 +109,12 @@
             <span id="size"
               >Size
               <input
-                id="arrSizeSlider"
-                type="range"
-                min="0"
-                max="50"
-                step="1"
-                value="20"
+              id="arrSizeSlider"
+              type="range"
+              min="0"
+              max="50"
+              step="1"
+              value="20"
               />
             </span>
           </div>
@@ -130,7 +140,7 @@
         </div>
         <!-- Speed Slider -->
       </div>
-      <div>
+      <div class="day-nightToggler">
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk" onClick="toggleMode()">
           <i class="fas fa-moon"></i>
@@ -195,11 +205,13 @@
       <div id="description">
         <div id="desW">Description Board</div>
         <ul id="array"></ul>
+        <!-- .elements li -->
       </div>
     </div>
     <script src="ScriptPart/description.js"></script>
     <script src="ScriptPart/bubbleSort.js"></script>
     <script src="ScriptPart/insertionSort.js"></script>
+    <script src="ScriptPart/heapSort.js"></script>
     <script src="ScriptPart/mergeSort.js"></script>
     <script src="ScriptPart/quickSort.js"></script>
     <script src="ScriptPart/selectionSort.js"></script>
