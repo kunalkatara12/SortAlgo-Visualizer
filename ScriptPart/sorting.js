@@ -30,7 +30,7 @@ function waitforme(milisec) {
 
 let arraySize = document.querySelector("#arrSizeSlider");
 arraySize.addEventListener("input", function () {
-  console.log(arraySize.value, typeof arraySize.value);
+  // console.log(arraySize.value, typeof arraySize.value);
   arrayUpdater(parseInt(arraySize.value));
 });
 
