@@ -9,7 +9,7 @@ function descriptionAdder(index, height) {
 }
 
 function descriptionRemover() {
-  console.log(arrays.innerHTML);
+  // console.log(arrays.innerHTML);
   // arrays.innerHtml = "";
 ua=[];
 const elements = document.querySelectorAll(".elements");
@@ -18,7 +18,7 @@ elements.forEach((element) => {
   ua.push(parseInt(element.innerText));
   element.remove();
 });
-console.log(arrays.innerHTML);
+// console.log(arrays.innerHTML);
 }
 
 function descriptionUpdater(foo){
