@@ -5,8 +5,6 @@ function offset(el) {
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 }
 
-
-
 const SortButton = document.getElementsByClassName("btn-outline-primary");
 function SortButtonClick() {
   for (let i = 0; i < SortButton.length; i++) {
@@ -43,7 +41,6 @@ document.querySelector("#barSpeedSlider").addEventListener("input", () => {
   document.querySelector("#barSpeedSlider").oninput = function () {
     valueSpeedSlider.textContent = this.value;
   };
-  
 });
 
 function deleteChild() {
@@ -57,17 +54,14 @@ function deleteChild() {
 //   .onclick(arrayUpdater(Math.floor(Math.random() * 256) + 1));
 arrayUpdater(Math.floor(Math.random() * 49) + 1);
 
-
 function arrayUpdater(noOfBars = 25) {
   deleteChild();
   descriptionRemover();
   let array = [];
   for (let i = 0; i < noOfBars; i++) {
     array.push(Math.floor(Math.random() * 70) + 1);
-
   }
   console.log(array);
-
 
   for (let index = 0; index < noOfBars; index++) {
     var bar = document.createElement("div"); //all bars have different height equal to respective array[index]
@@ -88,13 +82,8 @@ function arrayUpdater(noOfBars = 25) {
   enableSortingButton();
 }
 
-
-
-
-
 let valueSizeSlider = document.querySelector("#valSize");
 
 arraySize.oninput = function () {
   valueSizeSlider.textContent = this.value;
 };
-
