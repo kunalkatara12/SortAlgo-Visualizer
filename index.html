@@ -24,8 +24,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@629&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="preloader.css">
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 480px)' href="styleMobile.css"/> -->
+    <link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 480px)' href="styleMobile.css"/>
     <link rel="shortcut icon" href="/others/favicon.ico" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
@@ -140,6 +141,7 @@
         </div>
         <!-- Speed Slider -->
       </div>
+      <!-- dark-light theme toggler -->
       <div class="day-nightToggler">
         <input type="checkbox" class="checkbox" id="chk" />
         <label class="label" for="chk" onClick="toggleMode()">
@@ -148,6 +150,7 @@
           <div class="ball"></div>
         </label>
       </div>
+      <!-- dark-light theme toggler -->
       <div id="order" class="dropdown">
         <button
           class="btn btn-secondary dropdown-toggle"
@@ -208,6 +211,7 @@
         <!-- .elements li -->
       </div>
     </div>
+    <script src="ScriptPart/preloader.js"></script>
     <script src="ScriptPart/description.js"></script>
     <script src="ScriptPart/bubbleSort.js"></script>
     <script src="ScriptPart/insertionSort.js"></script>
@@ -227,5 +231,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </body>
 </html>
