@@ -12,6 +12,7 @@ async function bubbleSortAscendingFunction() {
         console.log(`Swap  ${j+1}th  ${j+2}th bar`);
         await waitforme(delay);
         swap(element[j], element[j + 1],element.length);
+       
       }
       element[j].style.background = "cyan";
       element[j + 1].style.background = "cyan";
